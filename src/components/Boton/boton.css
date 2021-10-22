@@ -1,0 +1,52 @@
+.titulo {
+  font-family: 'Staatliches', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #212529;
+}
+
+.subtitulos {
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  padding: 0px 10px;
+  text-align: center;
+  color: #212529;
+}
+
+.parrafos {
+  font-family: 'Work Sans', sans-serif;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .parrafos {
+    font-size: 1.7rem;
+  }
+}
+
+.botonPersonalizado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  background-color: #0062ae;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: #0486e9 -5px 5px;
+          box-shadow: #0486e9 -5px 5px;
+}
+/*# sourceMappingURL=boton.css.map */

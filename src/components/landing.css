@@ -1,0 +1,19 @@
+
+
+.hero{
+  height: 90vh;
+  background-color: rgb(240, 58, 51);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroImg{
+ width: 400px;
+ height: 400px;
+}
+
+.contenedorBotones{
+  display: flex;
+  justify-content: center;
+}

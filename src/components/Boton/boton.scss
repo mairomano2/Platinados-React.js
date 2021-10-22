@@ -1,0 +1,15 @@
+@import "../../variables";
+@import "../../fonts/fonts.css";
+@import "../../tipografias";
+
+.botonPersonalizado{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: $azul-oscuro;
+  border-radius: 10px;
+  border: none;
+  box-shadow: $azul-claro -5px 5px ;
+}
