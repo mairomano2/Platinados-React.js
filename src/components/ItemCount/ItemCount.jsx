@@ -9,7 +9,7 @@ export const ItemCount = ({valorInicial, stock}) => {
   }
 
   const restar = () => {
-    contador > stock ? setContador(contador - 1) : alert ("Elija otra cantidad de productos")
+    contador > valorInicial ? setContador(contador - 1) : alert ("Elija otra cantidad de productos")
   }
 
   return (
