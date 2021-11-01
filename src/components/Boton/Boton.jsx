@@ -1,9 +1,9 @@
-import './boton.css'
+import "./boton.css"
 
-export const Boton = (props) => {
-  const {texto} = props
-
+export const Boton = ({texto}) => {
   return (
     <button className="botonPersonalizado parrafos">{texto}</button>
   )
 }
+
+export default Boton
