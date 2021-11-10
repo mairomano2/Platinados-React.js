@@ -1,0 +1,33 @@
+@import "../../variables";
+@import "../../fonts/fonts.css";
+@import "../../tipografias";
+
+$rojo: rgb(240, 58, 51);
+$azul-claro: #0486e9;
+$azul-oscuro: #0062ae;
+$negro: #212529;
+
+.div-formulario{
+  background-color: $rojo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .formulario{
+    background-color: $azul-oscuro;
+    color: white;
+    border-radius: 10px;
+    box-shadow: $azul-claro -5px 5px ;
+    padding: 20px 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .input{
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+    }
+  }
+}
