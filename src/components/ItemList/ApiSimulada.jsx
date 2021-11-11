@@ -11,10 +11,6 @@ export const promesa = new Promise( (res, rej) => {
       setTimeout(() => {
         res(misiones)
       }, 2000);
-    }else{
-      setTimeout(() => {
-        rej("error")
-      }, 2000);
     }
   })
 

@@ -5,5 +5,3 @@ export const Boton = ({texto}) => {
     <button className="botonPersonalizado parrafos">{texto}</button>
   )
 }
-
-export default Boton
