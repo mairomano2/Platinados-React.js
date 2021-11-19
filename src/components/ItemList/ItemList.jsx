@@ -1,10 +1,7 @@
-import {Items} from "./Items"
+import { Items } from "./Items"
 
-export const ItemList = ({misiones}) => {
-  return (
-      misiones.map(mision => <Items mision={mision} key={mision.id}/>
-      )
-  )
+export const ItemList = ({ misiones }) => {
+  return misiones.map(mision => <Items key={mision.id} mision={mision} />)
 }
 
 export default ItemList

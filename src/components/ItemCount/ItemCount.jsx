@@ -1,7 +1,7 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import "./ItemCount.css"
 
-export const ItemCount = ({valorInicial, stock}) => {
+export const ItemCount = ({ valorInicial, stock }) => {
   const [contador, setContador] = useState(valorInicial)
 
   const sumar = () => {
@@ -9,7 +9,7 @@ export const ItemCount = ({valorInicial, stock}) => {
   }
 
   const restar = () => {
-    contador > valorInicial ? setContador(contador - 1) : alert ("Elija otra cantidad de productos")
+    contador > valorInicial ? setContador(contador - 1) : alert("Elija otra cantidad de productos")
   }
 
   return (
