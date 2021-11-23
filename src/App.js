@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
+import { Cart } from "./components/Cart/Cart"
 import Misiones from './components/Misiones';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Misiones />
+          </Route>
+          <Route exact path="/cart">
+            <Cart />
           </Route>
           <Route exact path="/:categoriaID">
             <Misiones />

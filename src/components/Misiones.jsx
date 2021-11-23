@@ -6,7 +6,7 @@ import { NavBarMisiones } from "./NavBarMisiones/NavBarMisiones";
 
 import "./misiones.css"
 
-function Misiones() {
+export function Misiones() {
   const [cargando, setCargando] = useState(true)
   const [misiones, setMisiones] = useState([])
 
