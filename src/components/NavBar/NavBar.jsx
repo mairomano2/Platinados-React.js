@@ -8,7 +8,7 @@ export function NavBar() {
           <Link to="/"> <img src="https://img.icons8.com/pastel-glyph/64/ffffff/home.png" /> </Link>
         </li>
         <li>
-          <Link to="/cart">Cart</Link>
+          <Link to="/misionesCompletadas">Misiones Completadas</Link>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
-import { Cart } from "./components/Cart/Cart"
+import {MisionesCompletadas} from "./components/MisionesCompletadas/MisionesCompletadas" 
 import Misiones from './components/Misiones';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/">
             <Misiones />
           </Route>
-          <Route exact path="/cart">
-            <Cart />
+          <Route exact path="/misionesCompletadas">
+            <MisionesCompletadas />
           </Route>
           <Route exact path="/:categoriaID">
             <Misiones />

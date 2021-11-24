@@ -19,7 +19,7 @@ export const ItemDetail = ({ mision }) => {
       <p className="parrafos">{mision.descripcion}</p>
       <p className="parrafos">{mision.puntaje}</p>
       <Boton texto="Marcar como completada" />
-      {clickeado ? (<Link to="/cart">Ir al carrito</Link>) : (<ItemCount valorInicial={1} stock={5} onAdd={handleAdd} />)}
+      {clickeado ? (<Link to="/misionesCompletadas">Ver misiones completadas</Link>) : (<ItemCount valorInicial={1} stock={5} onAdd={handleAdd} />)}
     </div>
   )
 }
