@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { MisionesContext } from "./components/Context/MisionesContext"
 import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
-import { MisionesCompletadas } from "./components/MisionesCompletadas/MisionesCompletadas" 
+import { MisionesContextProvider } from "./components/Context/MisionesContext" 
 import Misiones from './components/Misiones';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Misiones />
           </Route>
           <Route exact path="/misionesCompletadas">
-            <MisionesCompletadas />
+            <MisionesContextProvider />
           </Route>
           <Route exact path="/:categoriaID">
             <Misiones />
