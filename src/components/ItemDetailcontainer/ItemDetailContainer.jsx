@@ -20,8 +20,6 @@ export const ItemList = () => {
       .finally(() => { setCargando(false) })
   }, [misionID])
 
-  // if (!mision)
-
   return (
     <div>
       {cargando ? <h1>Cargando...</h1> : <ItemDetail mision={mision} />}

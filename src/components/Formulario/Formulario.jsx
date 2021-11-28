@@ -1,4 +1,3 @@
-import Boton from "../Boton/Boton"
 import "./formulario.css"
 
 export const Formulario = ({ tituloForm, input1, placeholder1, input2, placeholder2, input3, placeholder3 }) => {
@@ -23,7 +22,7 @@ export const Formulario = ({ tituloForm, input1, placeholder1, input2, placehold
         </label>
 
       </form>
-      <Boton texto="Agregar mision" />
+      <button type="button">Agregar mision</button>
     </div>
   )
 }

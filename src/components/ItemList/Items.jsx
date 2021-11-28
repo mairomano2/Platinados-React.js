@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { Boton } from "../Boton/Boton"
 
 export const Items = ({ mision }) => {
   return (
@@ -8,7 +7,7 @@ export const Items = ({ mision }) => {
       <p className="parrafos">Categoría: {mision.categoria}</p>
       <p className="parrafos">Puntaje: {mision.puntaje}</p>
       <Link to={`/detalle/${mision.id}`}>
-        <Boton texto="Ver detalle" />
+        <button type="button">Ver detalles</button>
       </Link>
     </div>
   )

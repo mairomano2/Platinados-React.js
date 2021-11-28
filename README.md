@@ -1,70 +1,7 @@
-# Getting Started with Create React App
+Platinados concive la vida como un juego. Cada persona tiene una misión general en este mundo y nos la autoasignamos a medida que vamos viviendo. Para algunos puede ser tener un buen trabajo, formar una familia, viajar, ayudar a otras personas. En fin, hay una enorme variedad de sentidos que podemos darle a nuestras vidas, y en mayor parte, está en nuestras manos llegar a cumplir esos objetivos que tanto soñamos alcanzar.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A este objetivo que da sentido a nuestra vida nos gusta llamarlo "Mision general" y es allí donde ponemos mayor esfuerzo y planificación para hacerlo realidad. Pero ¿existe un único propósito que nos mueve en el día a día para hacer todo lo que hacemos? Nosotros pensamos que no. Creemos que en la cotidianidad tenemos una enorme cantidad de pequeños objetivos que son tan importantes para nuestra felicidad como las misiones generales que ejegimos. Estas son las "Misiones secundarias".
 
-## Available Scripts
+Esta plataforma está para ayudarte a cumplir tus misiones secundarias y motivarte a platinar el juego de la vida. Como su nombre lo indica, las misiones secundarias que proponemos probablemente no sumen mucho a tu objetivo mayor pero pueden ser un disparador para ayudarte a mejorar algunas de tus habilidades o hacer esas cosas que venís posponiendo hace mucho tiempo. Platinados te ofrece una serie de misiones pensadas por nosotros, pero también podés crear tus propias misiones y personalizar esta experiencia.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esperamos poder ayudarte a completar el tablero de las misiones secundarias del juego de tu vida. ¡A por todo, aventurero!
