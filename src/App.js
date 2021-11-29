@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <MisionesContext.Provider value={value}>
         <NavBar />
         <Switch>
           <Route exact path="/">
@@ -29,7 +28,6 @@ function App() {
             <ItemList />
           </Route>
         </Switch>
-      </MisionesContext.Provider>
       </BrowserRouter>
     </div>
   );

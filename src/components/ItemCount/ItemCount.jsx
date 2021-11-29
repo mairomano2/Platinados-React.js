@@ -1,7 +1,8 @@
 import React, { useState } from "react"
+import { MisionesContext } from "../Context/MisionesContext"
 import "./ItemCount.css"
 
-export const ItemCount = ({ valorInicial, stock, onAdd }) => {
+export const ItemCount = ({ valorInicial, stock, onAdd, mision }) => {
   const [contador, setContador] = useState(valorInicial)
 
   const sumar = () => {
@@ -17,7 +18,7 @@ export const ItemCount = ({ valorInicial, stock, onAdd }) => {
       <button onClick={sumar}>+</button>
       <label>Numero: {contador}</label>
       <button onClick={restar}>-</button>
-      <button onClick={()=> onAdd(contador)} type="button">Marcar como completada</button>
+      <button onClick={()=> onAdd(mision, contador)} type="button">Marcar como completada</button>
     </div>
   )
 }

@@ -1,20 +1,19 @@
-import { useState, createContext} from "react"
-import {MisionesCompletadas} from "../MisionesCompletadas/MisionesCompletadas"
+import { useState, useContext, createContext} from "react"
+import { MisionesCompletadas } from "../MisionesCompletadas/MisionesCompletadas"
 
-export const MisionesContext = createContext()
+export const MisionesContext = createContext({ misionesCompletadas : [] })
 
-// export const useMisionesContext = () => useContext(MisionesContext)
+let ultimoID = 0;
 
-export const MisionesContextProvider = ({ children }) => {
+export const MisionesContextProvider = () => {
 
-  const [misionesCompletadas, setMisionesCompletadas] = useState([{ id: 1, puntaje:100 }, { id: 2, puntaje:100 }, { id: 3, puntaje:100 }])
+  const m = useContext(MisionesContext);
+  const [misionesCompletadas, setMisionesCompletadas] = useState(m.misionesCompletadas)
 
-  // TODO cambiar el nombre del parametro mision por nuevaMision
   const agregarMision = (nuevaMision, cantidad = 1) => {
 
     setMisionesCompletadas((misionesAnteriores) => {
       const completada = misionesAnteriores.some((misionAnterior => misionAnterior.id === nuevaMision.id))
-      // const completada = misionesAnteriores.some((({id}) => id === nuevaMision.id))
       if (completada) {
         return misionesAnteriores.map(misionAnterior => {
           if (misionAnterior.id === nuevaMision.id) {
@@ -27,6 +26,7 @@ export const MisionesContextProvider = ({ children }) => {
         return [...misionesAnteriores, { ...nuevaMision, cantidad }]
       }
     })
+    ultimoID++;
   }
 
   const borrarMision = id => {
@@ -42,8 +42,6 @@ export const MisionesContextProvider = ({ children }) => {
   return (
     <MisionesContext.Provider value={value}>
       <MisionesCompletadas />
-      <button onClick={() => agregarMision({ id: 4, puntaje:100 }, 2)}>Agregar item</button>
-      <button onClick={() => borrarMision(1)}>borrar item</button>
       <button onClick={limpiarCarrito}>limpiar carrito</button>
     </MisionesContext.Provider>
   )
