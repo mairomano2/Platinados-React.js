@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react"
+import { getFirestore } from "../service/getFirestore";
 import { useParams } from "react-router"
-import { promesa } from "./ItemList/ApiSimulada"
 import ItemList from "./ItemList/ItemList"
 import { NavBarMisiones } from "./NavBarMisiones/NavBarMisiones";
-
 import "./misiones.css"
 
 export function Misiones() {
@@ -13,15 +12,19 @@ export function Misiones() {
   const { categoriaID } = useParams()
 
   useEffect(() => {
-    promesa().then(res => {
-      if (categoriaID) {
-        setMisiones(res.filter(mision => mision.categoria === categoriaID))
-      } else {
-        setMisiones(res)
-      }
-    })
-      .catch(error => console.log(error))
-      .finally(() => { setCargando(false) })
+    const dbQuery = getFirestore()
+    if (categoriaID) {
+      dbQuery.collection("misiones").where("categoria", "==", categoriaID).get()
+        .then(data => setMisiones(data.docs.map(mision => ({ id: mision.id, ...mision.data() }))))
+        .catch(error => console.log(error))
+        .finally(() => { setCargando(false) })
+    } else {
+
+      dbQuery.collection("misiones").get()
+        .then(data => setMisiones(data.docs.map(mision => ({ id: mision.id, ...mision.data() }))))
+        .catch(error => console.log(error))
+        .finally(() => { setCargando(false) })
+    }
   }, [categoriaID])
 
   return (
@@ -31,4 +34,7 @@ export function Misiones() {
     </div>
   )
 }
+
 export default Misiones
+
+// TODO ver porque no renderiza la categoria fisico

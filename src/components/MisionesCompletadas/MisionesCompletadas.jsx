@@ -27,10 +27,3 @@ export function MisionesCompletadas() {
     </div>
   )
 }
-
-{/* // TODO 
-  // Debe mostrar el desglose de tu carrito y el precio total.
-  // Debe mostrar todos los ítems agregados agrupados.
-  // CartWidget.js.
-  // Ahora debe consumir el CartContext y mostrar en tiempo real (aparte del ícono) qué cantidad de ítems están agregados (2 camisas y 1 gorro equivaldrían a 3 items).
-  // El cart widget no se debe mostrar más si no hay items en el carrito, aplicando la técnica que elijas (dismount, style, etc). */}

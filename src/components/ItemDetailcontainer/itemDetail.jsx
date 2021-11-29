@@ -6,7 +6,6 @@ import { MisionesContext, MisionesContextProvider } from "../Context/MisionesCon
 export const ItemDetail = ({ mision }) => {
   const m = useContext(MisionesContext);
   const [clickeado, setClickeado] = useState(false)
-  console.log(clickeado)
 
   const handleAdd = (mision, cantidad) => {
     mision.cantidad = cantidad;
