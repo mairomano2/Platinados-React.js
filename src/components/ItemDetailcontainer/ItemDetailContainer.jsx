@@ -3,12 +3,9 @@ import { useParams } from "react-router";
 import { getFirestore } from "../../service/getFirestore";
 import { ItemDetail } from "./itemDetail"
 
-
 export const ItemList = () => {
   const [cargando, setCargando] = useState(true)
   const [mision, setMision] = useState()
-
-
   const { misionID } = useParams()
 
   useEffect(() => {

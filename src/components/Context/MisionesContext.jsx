@@ -10,7 +10,7 @@ export const MisionesContextProvider = () => {
   const m = useContext(MisionesContext);
   const [misionesCompletadas, setMisionesCompletadas] = useState(m.misionesCompletadas)
 
-  const agregarMision = (nuevaMision, cantidad = 1) => {
+  const agregarMision = (nuevaMision, cantidad) => {
 
     setMisionesCompletadas((misionesAnteriores) => {
       const completada = misionesAnteriores.some((misionAnterior => misionAnterior.id === nuevaMision.id))
