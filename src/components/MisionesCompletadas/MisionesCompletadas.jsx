@@ -30,22 +30,24 @@ export function MisionesCompletadas() {
     .finally(alert("tus misiones fueron guardadas con exito"))
   }
 
-
   return (
     <div>
       <h1>Misiones completadas</h1>
-      <p>Tu puntaje total es: {puntajeTotal()}</p>
+      <div>
+        <img width="30" src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+        <p>Tu puntaje total es: {puntajeTotal()}</p>
+        <img width="30" src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+      </div>
       {misiones.misionesCompletadas.length === 0 ?
         <div>
           <p>No tenés misiones completadas</p>
-          <Link to="/">Ver misiones disponibles</Link>
+          <Link to="/misiones">Ver misiones disponibles</Link>
         </div> :
         misiones.misionesCompletadas.map(mision =>
           <div>
             <p>{mision.titulo}</p>
             <p>{mision.puntaje}</p>
             <p>{mision.cantidad}</p>
-            <button onClick={() => misiones.borrarMision(mision.id)}>borrar item</button>
             <form onSubmit={guardarMisiones}>
               <button>Guardar misiones</button>
             </form>
@@ -56,4 +58,4 @@ export function MisionesCompletadas() {
 }
 
 // TODO hacer un loading en el finally de cuando se suben las misiones guardadas
-// mostrar en pantalla el id de la orden de compra
+// cambiar el alert por un modal

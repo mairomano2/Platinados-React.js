@@ -36,5 +36,3 @@ export function Misiones() {
 }
 
 export default Misiones
-
-// TODO ver porque no renderiza la categoria fisico

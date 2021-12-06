@@ -29,20 +29,11 @@ export const MisionesContextProvider = () => {
     ultimoID++;
   }
 
-  const borrarMision = id => {
-    setMisionesCompletadas((misionesAnteriores) => misionesAnteriores.filter(mision => mision.id !== id))
-  }
-
-  const limpiarCarrito = () => {
-    setMisionesCompletadas([])
-  }
-
-  const value = { misionesCompletadas, agregarMision, borrarMision, limpiarCarrito }
+  const value = { misionesCompletadas, agregarMision }
 
   return (
     <MisionesContext.Provider value={value}>
       <MisionesCompletadas />
-      <button onClick={limpiarCarrito}>limpiar carrito</button>
     </MisionesContext.Provider>
   )
 }
