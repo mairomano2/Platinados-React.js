@@ -39,12 +39,13 @@ function App() {
   );
 };
 
-// TODO 
+// TODO
+// hacer que se sume el puntaje total
+//mostrar las misiones generales en pantalla
+//ver que se guarde en firestore los datos de la mision (solo se crea el array)
 //agregar mas misiones
 //borrar la cantidad del codigo y firebase
-//borar limpiar carrito
-//borrar el boton para borrar item
 //borrar contador
-//hacer que el boton de borrar misiones suba automaticamente a firebase
+//hacer que el boton de agregar misiones suba automaticamente a firebase
 
 export default App;

@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { MisionesContext } from "../Context/MisionesContext"
 import "./ItemCount.css"
 
 export const ItemCount = ({ valorInicial, stock, onAdd, mision }) => {
