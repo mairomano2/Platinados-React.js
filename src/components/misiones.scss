@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../fonts/fonts.css";
+@import "../tipografias";
+@import url("../fonts/fonts.css");
+
+.div-misiones{
+  background-color: $rojo;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  .mision{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: $azul-oscuro;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: $azul-claro -5px 5px ;
+    margin: 15px;
+  
+    button{
+      text-decoration: none;
+    }
+  }
+  
+  .cargando{
+    text-align: center;
+  }
+}

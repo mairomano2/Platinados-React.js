@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { ComoJugar } from "./components/ComoJugar/ComoJugar"
 import { Landing } from "./components/Landing/Landing"
-import { Footer } from "./Footer/Footer"
+import { Footer } from "./components/Footer/Footer"
 import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
 import { MisionesContextProvider } from "./components/Context/MisionesContext" 
@@ -41,11 +41,7 @@ function App() {
 
 // TODO
 // hacer que se sume el puntaje total
-//mostrar las misiones generales en pantalla
 //ver que se guarde en firestore los datos de la mision (solo se crea el array)
 //agregar mas misiones
-//borrar la cantidad del codigo y firebase
-//borrar contador
-//hacer que el boton de agregar misiones suba automaticamente a firebase
 
 export default App;

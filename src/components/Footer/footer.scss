@@ -1,0 +1,23 @@
+@import "../../variables";
+@import "../../fonts/fonts.css";
+@import "../../tipografias";
+@import url("../../fonts/fonts.css");
+
+.footer{
+  background-color: $azul-oscuro;
+  padding: 20px;
+  margin-top: 20px;
+  margin-top: 0px;
+
+
+  .parrafos{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../variables";
+@import "../../fonts/fonts.css";
+@import "../../tipografias";
+@import url("../../fonts/fonts.css");
+
+.div-general{
+  background-color: $rojo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.estilo-misiones{
+  background-color: $azul-oscuro;
+  border-radius: 10px;
+  box-shadow: $azul-claro -5px 5px ;
+  padding: 20px 20px;
+  margin: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 992px){
+  .estilo-misiones{
+    margin: 20px;
+  }
+}
+
+.distribucion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-deco{
+  height: 350px;
+  margin: 80px;
+}
+
+@media(max-width: 768px){
+  .img-deco{
+    display: none;
+  }
+}
+
+a{
+  color: white;
+}

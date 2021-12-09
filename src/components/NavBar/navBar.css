@@ -26,21 +26,7 @@
   text-decoration: none;
 }
 
-.filtros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.filtros h2 {
-  margin: 0;
-}
-
-.filtros ul {
+.header-fondo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +34,39 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0062ae;
+  padding: 5px;
 }
-/*# sourceMappingURL=NavBarMisiones.css.map */
+
+.header-fondo .img-nav {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.header-fondo li {
+  list-style: none;
+}
+
+.ul-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ul-nav li {
+  list-style: none;
+}
+/*# sourceMappingURL=navBar.css.map */

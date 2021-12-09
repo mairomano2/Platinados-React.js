@@ -3,19 +3,20 @@ import "./NavBarMisiones.css"
 
 export const NavBarMisiones = () => {
   return (
-    <div className="headerFondo">
-      <ul className="navUl">
+    <div className="filtros">
+      <h2 className="subtitulos">Filtrar por: </h2>
+      <ul>
         <Link to="/finanzas">
-          <li className="navLi parrafos navA">finanzas</li>
+          <li className="boton-personalizado">finanzas</li>
         </Link>
         <Link to="/cocina">
-          <li className="navLi parrafos navA">cocina</li>
+          <li className="boton-personalizado">cocina</li>
         </Link>
         <Link to="/cuidado-personal">
-          <li className="navLi parrafos navA">cuidado-personal</li>
+          <li className="boton-personalizado">cuidado-personal</li>
         </Link>
         <Link to="/fisico">
-          <li className="navLi parrafos navA">fisico</li>
+          <li className="boton-personalizado">fisico</li>
         </Link>
       </ul>
     </div>

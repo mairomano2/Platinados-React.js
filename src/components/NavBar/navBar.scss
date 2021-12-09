@@ -1,0 +1,32 @@
+@import "../../variables";
+@import "../../fonts/fonts.css";
+@import "../../tipografias";
+@import url("../../fonts/fonts.css");
+
+.header-fondo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $azul-oscuro;
+  padding: 5px;
+
+  .img-nav{
+    width: 50px;
+    margin-left: 20px;
+  }
+
+  li{
+    list-style: none;
+  }
+}
+
+.ul-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  li{
+    list-style: none;
+  }
+}

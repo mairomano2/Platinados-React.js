@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom";
 import { getFirestore } from "../../service/getFirestore";
 import { MisionesContext } from "../Context/MisionesContext"
+import "./misionesCompletadas.css"
 
 export function MisionesCompletadas() {
 
@@ -39,23 +40,24 @@ export function MisionesCompletadas() {
   // }
 
   return(
-    <div>
-      <div>
-        <img width="30" src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
-        <p>Tu puntaje total es: {puntajeTotal()}</p>
-        <img width="30" src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+    <div className="misiones-completadas">
+      <h1 className="titulo">Misiones completadas</h1>
+      <div className="puntaje">
+        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+        <h2 className="subtitulos">Tu puntaje total es: {puntajeTotal()}</h2>
+        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
       </div>
 
-      {cargando ? <h1>Cargando...</h1> :
+      {cargando ? <h2 className="subtitulos">Cargando...</h2> :
         misionesCompletadas.length === 0 ?
           <div>
-            <p>No tenes misiones completadas</p> 
-            <Link to="/misiones">Ver misiones disponibles </Link> 
+            <p className="parrafos">No tenes misiones completadas</p> 
+            <Link to="/misiones" className="parrafos">Ver misiones disponibles</Link> 
           </div> :
           <div>
-            <p>{misionesCompletadas.titulo}</p>
-            <p>{misionesCompletadas.descripcion}</p>
-            <p>{misionesCompletadas.puntaje}</p>
+            <p className="parrafos">{misionesCompletadas.titulo}</p>
+            <p className="parrafos">{misionesCompletadas.descripcion}</p>
+            <p className="parrafos">{misionesCompletadas.puntaje}</p>
           </div>
       }
     </div>

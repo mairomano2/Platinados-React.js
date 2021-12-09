@@ -1,5 +1,5 @@
 @import url(c:\Users\Walter Halle\Desktop\Programitas\platinados\src\fonts\fonts.css);
-@import url("../fonts/fonts.css");
+@import url("../../fonts/fonts.css");
 .titulo {
   font-family: 'Staatliches', cursive;
   font-size: 30px;
@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-.div-misiones {
+.div-general {
   background-color: #f03a33;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,13 +35,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.div-misiones .mision {
+.estilo-misiones {
+  background-color: #0062ae;
+  border-radius: 10px;
+  -webkit-box-shadow: #0486e9 -5px 5px;
+          box-shadow: #0486e9 -5px 5px;
+  padding: 20px 20px;
+  margin: 20px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,23 +54,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0062ae;
-  width: 300px;
-  border-radius: 10px;
-  -webkit-box-shadow: #0486e9 -5px 5px;
-          box-shadow: #0486e9 -5px 5px;
-  margin: 15px;
 }
 
-.div-misiones .mision button {
-  text-decoration: none;
+@media (max-width: 992px) {
+  .estilo-misiones {
+    margin: 20px;
+  }
 }
 
-.div-misiones .cargando {
-  text-align: center;
+.distribucion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-/*# sourceMappingURL=misiones.css.map */
+
+.img-deco {
+  height: 350px;
+  margin: 80px;
+}
+
+@media (max-width: 768px) {
+  .img-deco {
+    display: none;
+  }
+}
+
+a {
+  color: white;
+}
+/*# sourceMappingURL=comoJugar.css.map */

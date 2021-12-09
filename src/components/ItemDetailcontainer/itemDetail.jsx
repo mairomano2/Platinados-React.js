@@ -2,11 +2,12 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { getFirestore } from "../../service/getFirestore";
 import { MisionesContext } from "../Context/MisionesContext"
+import "./detalle.css"
 
 export const ItemDetail = ({ mision }) => {
   const m = useContext(MisionesContext);
 
-  const puntajeTotal = () => { return m.misionesCompletadas.reduce((acum, valor) => (acum + (valor.cantidad * valor.puntaje)), 0) }
+  const puntajeTotal = () => { return m.misionesCompletadas.reduce((acum, valor) => (acum + valor.puntaje), 0) }
 
   const guardarMisiones = (e) => {
     e.preventDefault()
@@ -36,14 +37,17 @@ export const ItemDetail = ({ mision }) => {
   // }
 
   return (
-    <div>
-      <p className="parrafos">Categoria: {mision.categoria}</p>
-      <p className="parrafos">Titulo: {mision.titulo}</p>
-      <p className="parrafos">Descripcion: {mision.descripcion}</p>
-      <p className="parrafos">Puntaje: {mision.puntaje}</p>
-      <form onSubmit={guardarMisiones}>
-        <button>Guardar misiones</button>
-      </form>
+    <div className="detalle">
+      <h1 className="titulo">Detalle de la misión</h1>
+      <div className="mision">
+        <p className="parrafos">Titulo: {mision.titulo}</p>
+        <p className="parrafos">Categoria: {mision.categoria}</p>
+        <p className="parrafos">Descripcion: {mision.descripcion}</p>
+        <p className="parrafos">Puntaje: {mision.puntaje}</p>
+        <form onSubmit={guardarMisiones}>
+          <button className="boton-personalizado">Guardar misiones</button>
+        </form>
+      </div>
       <Link to="/misionesCompletadas">Ver misiones completadas</Link>
     </div>
   )

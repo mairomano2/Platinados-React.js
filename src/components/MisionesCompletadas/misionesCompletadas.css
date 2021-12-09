@@ -26,7 +26,8 @@
   text-decoration: none;
 }
 
-.filtros {
+.misiones-completadas {
+  background-color: #f03a33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,13 +35,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
-.filtros h2 {
-  margin: 0;
-}
-
-.filtros ul {
+.misiones-completadas .puntaje {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +49,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-/*# sourceMappingURL=NavBarMisiones.css.map */
+
+.misiones-completadas .puntaje img {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=misionesCompletadas.css.map */

@@ -1,5 +1,5 @@
 @import url(c:\Users\Walter Halle\Desktop\Programitas\platinados\src\fonts\fonts.css);
-@import url("../fonts/fonts.css");
+@import url("../../fonts/fonts.css");
 .titulo {
   font-family: 'Staatliches', cursive;
   font-size: 30px;
@@ -26,8 +26,7 @@
   text-decoration: none;
 }
 
-.div-misiones {
-  background-color: #f03a33;
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,37 +34,64 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f03a33;
+  height: 90vh;
 }
 
-.div-misiones .mision {
+.botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  justify-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 0px;
+}
+
+.boton-personalizado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
   background-color: #0062ae;
-  width: 300px;
+  color: white;
   border-radius: 10px;
+  border: none;
   -webkit-box-shadow: #0486e9 -5px 5px;
           box-shadow: #0486e9 -5px 5px;
-  margin: 15px;
 }
 
-.div-misiones .mision button {
-  text-decoration: none;
+.boton-personalizado:hover {
+  color: white;
 }
 
-.div-misiones .cargando {
-  text-align: center;
+.hero-img {
+  height: 320px;
 }
-/*# sourceMappingURL=misiones.css.map */
+
+@media (max-width: 992px) {
+  .hero-img {
+    height: 270px;
+  }
+}
+/*# sourceMappingURL=landing.css.map */
