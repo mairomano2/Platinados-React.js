@@ -18,7 +18,7 @@ export const ItemList = () => {
 
   return (
     <div>
-      {cargando ? <h1>Cargando...</h1> : <ItemDetail mision={mision} />}
+      {cargando ? <h1 className="subtitulos">Cargando...</h1> : <ItemDetail mision={mision} />}
     </div>
   )
 }

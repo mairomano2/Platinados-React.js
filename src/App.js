@@ -6,42 +6,46 @@ import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
 import { MisionesContextProvider } from "./components/Context/MisionesContext" 
 import Misiones from './components/Misiones';
+import { MisionesCompletadas } from "./components/MisionesCompletadas/MisionesCompletadas"
 
 function App() {
-
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route exact path="/misiones">
-            <Misiones />
-          </Route>
-          <Route exact path="/comoJugar">
-            <ComoJugar />
-          </Route>
-          <Route exact path="/misionesCompletadas">
-            <MisionesContextProvider />
-          </Route>
-          <Route exact path="/:categoriaID">
-            <Misiones />
-          </Route>
-          <Route exact path="/detalle/:misionID">
-            <ItemList />
-          </Route>
-        </Switch>
-        <Footer />
-      </BrowserRouter>
+      <MisionesContextProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <Landing />
+            </Route>
+            <Route exact path="/misiones">
+              <Misiones />
+            </Route>
+            <Route exact path="/comoJugar">
+              <ComoJugar />
+            </Route>
+            <Route exact path="/misionesCompletadas">
+              <MisionesCompletadas />
+            </Route>
+            <Route exact path="/:categoriaID">
+              <Misiones />
+            </Route>
+            <Route exact path="/detalle/:misionID">
+              <ItemList />
+            </Route>
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </MisionesContextProvider>
     </div>
   );
 };
 
 // TODO
-// hacer que se sume el puntaje total
-//ver que se guarde en firestore los datos de la mision (solo se crea el array)
+//borrar los css que no sean con url
 //agregar mas misiones
+//poner imagenes
+//agregar emojis
+//cambiar el alert por un modal
 
 export default App;

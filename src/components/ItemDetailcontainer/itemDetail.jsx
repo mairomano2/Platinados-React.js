@@ -5,36 +5,22 @@ import { MisionesContext } from "../Context/MisionesContext"
 import "./detalle.css"
 
 export const ItemDetail = ({ mision }) => {
-  const m = useContext(MisionesContext);
-
-  const puntajeTotal = () => { return m.misionesCompletadas.reduce((acum, valor) => (acum + valor.puntaje), 0) }
+  const misiones = useContext(MisionesContext);
 
   const guardarMisiones = (e) => {
     e.preventDefault()
 
     const misionesGuardadas = {}
 
-    misionesGuardadas.puntajeTotal = puntajeTotal()
-    misionesGuardadas.mision = m.misionesCompletadas.map(m => {
-      const id = m.id
-      const titulo = m.titulo
-      const descripcion = m.descripcion
-      const puntaje = m.puntaje * m.cantidad
-      return { id, titulo, descripcion, puntaje }
-    })
+    misionesGuardadas.puntajeTotal = misiones.puntajeTotal
+    misionesGuardadas.mision = mision
 
     const dbQuery = getFirestore()
-    dbQuery.collection("misionesGuardadas").add(misionesGuardadas)
-    .then(res => console.log(res))
-    .catch( err => console.log(err))
-    .finally(alert("tus misiones fueron guardadas con exito"))
+    dbQuery.collection("misionesGuardadas").add(misionesGuardadas.mision)
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+      .finally(alert("tus misiones fueron guardadas con exito"))
   }
-
-  // const handleAdd = (mision, cantidad) => {
-  //   mision.cantidad = cantidad;
-  //   m.misionesCompletadas = [...m.misionesCompletadas, mision];
-  //   console.log(m.misionesCompletadas)
-  // }
 
   return (
     <div className="detalle">

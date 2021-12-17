@@ -1,39 +1,30 @@
-import { useState, useContext, createContext} from "react"
-import { MisionesCompletadas } from "../MisionesCompletadas/MisionesCompletadas"
+import { useState, createContext, useEffect } from "react"
+import { getFirestore } from "../../service/getFirestore";
 
-export const MisionesContext = createContext({ misionesCompletadas : [] })
+export const MisionesContext = createContext()
 
-let ultimoID = 0;
+export const MisionesContextProvider = ({ children }) => {
 
-export const MisionesContextProvider = () => {
+  const [misionesCompletadas, setMisionesCompletadas] = useState([])
+  const [cargando, setCargando] = useState(true)
 
-  const m = useContext(MisionesContext);
-  const [misionesCompletadas, setMisionesCompletadas] = useState(m.misionesCompletadas)
+  const puntajeTotal = misionesCompletadas.reduce((acum, valor) => (acum + valor.puntaje), 0)
 
-  const agregarMision = (nuevaMision, cantidad) => {
+  useEffect(() => {
+    const dbQuery = getFirestore()
+    dbQuery.collection("misionesGuardadas").get()
+      .then(data => setMisionesCompletadas(data.docs.map(mision => ({ id: mision.id, ...mision.data() }))))
+      // .then(data => setMisionesCompletadas(data.docs.map(mision => ({ id: mision.id, ...mision.data().misiones[0] }))))
+      .catch(error => console.error(error))
+      .finally(() => { setCargando(false) })
+  }, [])
 
-    setMisionesCompletadas((misionesAnteriores) => {
-      const completada = misionesAnteriores.some((misionAnterior => misionAnterior.id === nuevaMision.id))
-      if (completada) {
-        return misionesAnteriores.map(misionAnterior => {
-          if (misionAnterior.id === nuevaMision.id) {
-            return { ...nuevaMision, cantidad: misionAnterior.cantidad + cantidad }
-          } else {
-            return misionAnterior
-          }
-        })
-      } else {
-        return [...misionesAnteriores, { ...nuevaMision, cantidad }]
-      }
-    })
-    ultimoID++;
-  }
-
-  const value = { misionesCompletadas, agregarMision }
+  const value = { misionesCompletadas, cargando, puntajeTotal }
+  console.log(misionesCompletadas)
 
   return (
     <MisionesContext.Provider value={value}>
-      <MisionesCompletadas />
+      {children}
     </MisionesContext.Provider>
   )
 }
