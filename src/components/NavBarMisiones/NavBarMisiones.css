@@ -1,11 +1,10 @@
-@import url(c:\Users\Walter Halle\Desktop\Programitas\platinados\src\fonts\fonts.css);
 @import url("../../fonts/fonts.css");
 .titulo {
   font-family: 'Staatliches', cursive;
   font-size: 30px;
   text-align: center;
   color: #212529;
-  margin: 0;
+  margin: 0px;
   padding-top: 20px;
 }
 

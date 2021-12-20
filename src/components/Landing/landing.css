@@ -1,11 +1,10 @@
-@import url(c:\Users\Walter Halle\Desktop\Programitas\platinados\src\fonts\fonts.css);
 @import url("../../fonts/fonts.css");
 .titulo {
   font-family: 'Staatliches', cursive;
   font-size: 30px;
   text-align: center;
   color: #212529;
-  margin: 0;
+  margin: 0px;
   padding-top: 20px;
 }
 
@@ -51,7 +50,6 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 30px 0px;
 }
 
 .boton-personalizado {
@@ -86,12 +84,12 @@
 }
 
 .hero-img {
-  height: 320px;
+  height: 280px;
 }
 
 @media (max-width: 992px) {
   .hero-img {
-    height: 270px;
+    height: 250px;
   }
 }
 /*# sourceMappingURL=landing.css.map */

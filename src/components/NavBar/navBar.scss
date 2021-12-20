@@ -1,5 +1,4 @@
 @import "../../variables";
-@import "../../fonts/fonts.css";
 @import "../../tipografias";
 @import url("../../fonts/fonts.css");
 
@@ -25,6 +24,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
+  padding: 0;
 
   li{
     list-style: none;
