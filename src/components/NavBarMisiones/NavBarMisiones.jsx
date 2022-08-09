@@ -7,16 +7,16 @@ export const NavBarMisiones = () => {
       <h2 className="subtitulos">Filtrar por: </h2>
       <ul>
         <Link to="/finanzas">
-          <li className="boton-personalizado">finanzas</li>
+          <li className="contenedor-decorado">finanzas</li>
         </Link>
         <Link to="/cocina">
-          <li className="boton-personalizado">cocina</li>
+          <li className="contenedor-decorado">cocina</li>
         </Link>
         <Link to="/cuidado-personal">
-          <li className="boton-personalizado">cuidado-personal</li>
+          <li className="contenedor-decorado">cuidado-personal</li>
         </Link>
         <Link to="/fisico">
-          <li className="boton-personalizado">fisico</li>
+          <li className="contenedor-decorado">fisico</li>
         </Link>
       </ul>
     </div>

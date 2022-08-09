@@ -4,16 +4,16 @@ import "./landing.css"
 
 export function Landing(){
   return(
-    <div className="hero">
+    <div className="div-general hero">
       <img className="hero-img" src={Imagen} />
       <h1 className="titulo" id="h1">Bienvenidx a platinados</h1>
       <h2 className="subtitulos">Comenza a mejorar tu vida</h2>
-      <div  className="botones">
+      <div  className="botones-hero">
         <Link to="/misiones">
-          <button className="boton-personalizado">Comenzar</button>
+          <button className="contenedor-decorado boton-hero">Comenzar</button>
         </Link>
         <Link to="/comoJugar">
-          <button className="boton-personalizado">Cómo jugar</button>
+          <button className="contenedor-decorado boton-hero">Cómo jugar</button>
         </Link>
       </div>
     </div>

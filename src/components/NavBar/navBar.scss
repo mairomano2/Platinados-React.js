@@ -1,6 +1,6 @@
-@import "../../variables";
-@import "../../tipografias";
-@import url("../../fonts/fonts.css");
+@import "../../styles/variables";
+@import "../../styles/tipografias";
+@import "../../styles/componentes";
 
 .header-fondo{
   display: flex;
@@ -13,10 +13,6 @@
   .img-nav{
     width: 50px;
     margin-left: 20px;
-  }
-
-  li{
-    list-style: none;
   }
 }
 

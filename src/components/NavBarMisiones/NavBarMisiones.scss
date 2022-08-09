@@ -1,18 +1,9 @@
-@import "../../variables";
-@import "../../tipografias";
-@import url("../../fonts/fonts.css");
-
 .filtros{
   display: flex;
   flex-direction: column;
 
-  h2{
-    margin: 0;
-  }
-
   ul{
     display: flex;
-    flex-direction: row;
     margin: 0;
   }
 }

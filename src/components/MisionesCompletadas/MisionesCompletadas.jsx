@@ -8,9 +8,9 @@ export function MisionesCompletadas() {
   const misiones = useContext(MisionesContext);
 
   return (
-    <div className="misiones-completadas">
+    <div className="div-general">
       <h1 className="titulo">Misiones completadas</h1>
-      <div className="puntaje">
+      <div className="puntaje-total">
         <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
         <h2 className="subtitulos">Tu puntaje total es: {misiones.puntajeTotal}</h2>
         <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
@@ -20,13 +20,13 @@ export function MisionesCompletadas() {
         misiones.misionesCompletadas.length === 0 ?
           <div>
             <p className="parrafos">No tenes misiones completadas</p>
-            <Link to="/misiones" className="parrafos">Ver misiones disponibles</Link>
+            <Link to="/misiones" className="parrafos link">Ver misiones disponibles</Link>
           </div> :
           misiones.misionesCompletadas.map( (m) =>
-            <div className="mision">
-              <p className="parrafos">{m.titulo}</p>
-              <p className="parrafos">{m.descripcion}</p>
-              <p className="parrafos">{m.puntaje}</p>
+            <div className="contenedor-decorado">
+              <p className="parrafos">Misión: {m.titulo}</p>
+              <p className="parrafos">Descripción: {m.descripcion}</p>
+              <p className="parrafos">Puntaje: {m.puntaje}</p>
             </div>)
       }
     </div>

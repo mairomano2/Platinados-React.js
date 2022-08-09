@@ -28,7 +28,7 @@ export function Misiones() {
   }, [categoriaID])
 
   return (
-    <div className="div-misiones">
+    <div className="div-general">
       <h1 className="titulo">Misiones disponibles</h1>
       <NavBarMisiones />
       {cargando ? <h1 className="subtitulos cargando">Cargando...</h1> : <ItemList misiones={misiones} />}

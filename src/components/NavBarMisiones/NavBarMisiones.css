@@ -1,30 +1,3 @@
-@import url("../../fonts/fonts.css");
-.titulo {
-  font-family: 'Staatliches', cursive;
-  font-size: 30px;
-  text-align: center;
-  color: #212529;
-  margin: 0px;
-  padding-top: 20px;
-}
-
-.subtitulos {
-  font-family: 'Staatliches', cursive;
-  font-size: 20px;
-  padding: 0px 10px;
-  text-align: center;
-  color: #212529;
-}
-
-.parrafos {
-  font-family: 'Work Sans', sans-serif;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
 .filtros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,18 +8,10 @@
           flex-direction: column;
 }
 
-.filtros h2 {
-  margin: 0;
-}
-
 .filtros ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 0;
 }
 /*# sourceMappingURL=NavBarMisiones.css.map */

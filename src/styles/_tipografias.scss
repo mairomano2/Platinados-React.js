@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Work+Sans:wght@300&display=swap');
+
+.titulo{
+  font-family: 'Staatliches', cursive;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  padding: 30px 0px;
+}
+
+.subtitulos{
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0px 10px;
+  text-align: center;
+  color: white;
+}
+
+.parrafos{
+  font-family: 'Work Sans', sans-serif;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.link{
+  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  transition: text-decoration-color 0.3s;
+}
+
+.link:hover {
+  text-decoration-color: white;
+}

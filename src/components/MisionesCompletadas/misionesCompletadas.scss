@@ -1,36 +1,16 @@
-@import "../../variables";
-@import "../../tipografias";
-@import url("../../fonts/fonts.css");
+@import "../../styles/variables";
+@import "../../styles/tipografias";
+@import "../../styles/componentes";
 
-.misiones-completadas{
-  background-color: $rojo;
+.puntaje-total{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
 
-  .puntaje{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    img{
-      margin: 10px;
-      height: 30px;
-      width: 30px;
-    }
+  img{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
   }
-}
-
-.mision{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  background-color: $azul-oscuro;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: $azul-claro -5px 5px ;
-  margin: 15px;
 }

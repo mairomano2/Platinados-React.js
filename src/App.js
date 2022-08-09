@@ -41,11 +41,4 @@ function App() {
   );
 };
 
-// TODO
-//borrar los css que no sean con url
-//agregar mas misiones
-//poner imagenes
-//agregar emojis
-//cambiar el alert por un modal
-
 export default App;

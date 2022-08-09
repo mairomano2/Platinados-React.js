@@ -7,7 +7,7 @@ export function ComoJugar(){
     <div className="div-general">
       <h1 className="titulo titulo--margen">Cómo jugar</h1>
       <div className="distribucion">
-        <section className="estilo-misiones distribucion">
+        <section className="contenedor-decorado distribucion">
           <article>
             <h2 className="subtitulos">Concepto del juego</h2>
             <p className="parrafos">Platinados concive la vida como un juego. Cada persona tiene una misión general en este mundo y nos la autoasignamos a medida que vamos viviendo. Para algunos puede ser tener un buen trabajo, formar una familia, viajar, ayudar a otras personas. En fin, hay una enorme variedad de sentidos que podemos darle a nuestras vidas, y en mayor parte, está en nuestras manos llegar a cumplir esos objetivos que tanto soñamos alcanzar.</p>
@@ -18,7 +18,7 @@ export function ComoJugar(){
         </section>
         <img src={Imagen} className="img-deco" />
       </div>
-        <section className="estilo-misiones">
+        <section className="contenedor-decorado">
           <article>
             <h2 className="subtitulos">Instructivo</h2>
             <p className="parrafos">¡Gracias por unirte a Platinados! Primero que nada vas a necesitar <Link to="/">registrate</Link> para que guardar tu progreso.</p>
@@ -28,7 +28,7 @@ export function ComoJugar(){
           </article>
         </section>
         <Link to="/misiones">
-          <button className="boton-personalizado">Comenzar a jugar</button>
+          <button className="contenedor-decorado boton-hero">Comenzar a jugar</button>
         </Link>
     </div>
   )

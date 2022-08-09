@@ -1,27 +1,9 @@
-@import "../../variables";
-@import "../../tipografias";
-@import url("../../fonts/fonts.css");
-
-.div-general{
-  background-color: $rojo;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.estilo-misiones{
-  background-color: $azul-oscuro;
-  border-radius: 10px;
-  box-shadow: $azul-claro -5px 5px ;
-  padding: 20px 20px;
-  margin: 20px 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@import "../../styles/variables";
+@import "../../styles/tipografias";
+@import "../../styles/componentes";
 
 @media (max-width: 992px){
-  .estilo-misiones{
+  .contenedor-decorado{
     margin: 20px;
   }
 }
@@ -37,9 +19,16 @@
   margin: 80px;
 }
 
+@media(max-width: 425px){
+  .distribucion{
+    flex-direction: column;
+  }
+}
+
 @media(max-width: 768px){
   .img-deco{
-    display: none;
+    height: 200px;
+    margin: 20px;
   }
 }
 
