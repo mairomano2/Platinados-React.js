@@ -5,7 +5,7 @@ import "./misionesCompletadas.css"
 
 export function MisionesCompletadas() {
 
-  const misiones = useContext(MisionesContext);
+  const misiones = useContext(MisionesContext)
 
   return (
     <div className="div-general">
@@ -22,11 +22,11 @@ export function MisionesCompletadas() {
             <p className="parrafos">No tenes misiones completadas</p>
             <Link to="/misiones" className="parrafos link">Ver misiones disponibles</Link>
           </div> :
-          misiones.misionesCompletadas.map( (m) =>
-            <div className="contenedor-decorado">
-              <p className="parrafos">Misión: {m.titulo}</p>
-              <p className="parrafos">Descripción: {m.descripcion}</p>
-              <p className="parrafos">Puntaje: {m.puntaje}</p>
+          misiones.misionesCompletadas.map( (mision) =>
+            <div key={mision.id} className="contenedor-decorado misiones">
+              <p className="parrafos">Misión: {mision.titulo}</p>
+              <p className="parrafos">Descripción: {mision.descripcion}</p>
+              <p className="parrafos">Puntaje: {mision.puntaje}</p>
             </div>)
       }
     </div>

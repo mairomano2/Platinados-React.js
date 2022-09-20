@@ -12,13 +12,13 @@ export function NavBar() {
       <ul className="ul-nav">
         <p className="parrafos">Puntaje: {misiones.puntajeTotal}</p>
         <li>
-          <Link to="/comoJugar" class="parrafos link">Cómo jugar</Link>
+          <Link to="/comoJugar" className="parrafos link">Cómo jugar</Link>
         </li>
         <li>
-          <Link to="/misiones" class="parrafos link">Misiones</Link>
+          <Link to="/misiones" className="parrafos link">Misiones</Link>
         </li>
         <li>
-          <Link to="/misionesCompletadas" class="parrafos link">Misiones Completadas</Link>
+          <Link to="/misionesCompletadas" className="parrafos link">Misiones Completadas</Link>
         </li>
       </ul>
     </nav>

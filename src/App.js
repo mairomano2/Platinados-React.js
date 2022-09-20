@@ -2,7 +2,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { ComoJugar } from "./components/ComoJugar/ComoJugar"
 import { Landing } from "./components/Landing/Landing"
 import { Footer } from "./components/Footer/Footer"
-import { ItemList } from "./components/ItemDetailcontainer/ItemDetailContainer"
 import { NavBar } from "./components/NavBar/NavBar"
 import { MisionesContextProvider } from "./components/Context/MisionesContext" 
 import Misiones from './components/Misiones';
@@ -27,11 +26,8 @@ function App() {
             <Route exact path="/misionesCompletadas">
               <MisionesCompletadas />
             </Route>
-            <Route exact path="/:categoriaID">
+            <Route exact path="/categoria/:categoriaID">
               <Misiones />
-            </Route>
-            <Route exact path="/detalle/:misionID">
-              <ItemList />
             </Route>
           </Switch>
           <Footer />

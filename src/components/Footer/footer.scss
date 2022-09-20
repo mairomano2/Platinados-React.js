@@ -1,6 +1,5 @@
-@import "../../variables";
-@import "../../tipografias";
-// @import url("../../fonts/fonts.css");
+@import "../../styles/variables";
+@import "../../styles/tipografias";
 
 .footer{
   background-color: $azul-oscuro;
@@ -9,7 +8,8 @@
   margin-top: 0px;
 
 
-  .parrafos{
+  .parrafos-footer{
+    color: white;
     text-align: center;
     font-size: 1rem;
     margin: 0;

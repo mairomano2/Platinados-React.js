@@ -1,7 +1,13 @@
 @import "../styles/variables";
 @import "../styles/tipografias";
 @import "../styles/componentes";
-  
-.cargando{
-  text-align: center;
+
+.misiones{
+  width: 400px;
 }
+
+@media (max-width: 768px){
+  .misiones{
+    width: 190px;
+  }
+}  

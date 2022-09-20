@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Work+Sans:wght@300&display=swap");
 .titulo {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   font-size: 30px;
   text-align: center;
   font-weight: 100;
   color: white;
-  padding: 30px 0px;
+  padding: 15px 0px;
+  margin: 0;
 }
 
 .subtitulos {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   font-size: 20px;
   font-weight: 100;
   padding: 0px 10px;
@@ -19,9 +20,8 @@
 }
 
 .parrafos {
-  font-family: 'Work Sans', sans-serif;
-  padding: 10px;
-  margin: 10px;
+  margin: 0.5rem;
+  font-family: "Work Sans", sans-serif;
   color: white;
   font-size: 1rem;
   text-decoration: none;
@@ -30,7 +30,6 @@
 .link {
   -webkit-text-decoration: underline 1px rgba(0, 0, 0, 0);
           text-decoration: underline 1px rgba(0, 0, 0, 0);
-  -webkit-transition: -webkit-text-decoration-color 0.3s;
   transition: -webkit-text-decoration-color 0.3s;
   transition: text-decoration-color 0.3s;
   transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
@@ -42,35 +41,19 @@
 }
 
 .div-general {
-  background-color: #f03a33;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(240, 58, 51);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   min-height: 90vh;
 }
 
 .contenedor-decorado {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Work Sans", sans-serif;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Work Sans', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   padding: 10px;
   margin: 20px;
@@ -78,15 +61,12 @@
   color: white;
   border-radius: 10px;
   border: none;
-  -webkit-box-shadow: #0486e9 -4px 4px;
-          box-shadow: #0486e9 -4px 4px;
+  box-shadow: #0486e9 -4px 4px;
 }
 
 .boton-hero:hover {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .hero {
@@ -94,15 +74,9 @@
 }
 
 .botones-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .hero-img {
@@ -113,5 +87,4 @@
   .hero-img {
     height: 250px;
   }
-}
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

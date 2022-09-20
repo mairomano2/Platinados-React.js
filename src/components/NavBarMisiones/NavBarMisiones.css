@@ -1,17 +1,8 @@
 .filtros {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .filtros ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
-}
-/*# sourceMappingURL=NavBarMisiones.css.map */
+}/*# sourceMappingURL=NavBarMisiones.css.map */
