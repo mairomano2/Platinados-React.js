@@ -1,9 +1,17 @@
 .filtros{
   display: flex;
   flex-direction: column;
+}
 
-  ul{
-    display: flex;
-    margin: 0;
+.contenedor-filtros{
+  width: 420px;
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: scroll;
+}
+
+@media (max-width: 768px) {
+  .contenedor-filtros{
+    width: 240px;
   }
 }

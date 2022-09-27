@@ -2,7 +2,16 @@
   display: flex;
   flex-direction: column;
 }
-.filtros ul {
+
+.contenedor-filtros {
+  width: 420px;
   display: flex;
-  margin: 0;
+  flex-wrap: no-wrap;
+  overflow-x: scroll;
+}
+
+@media (max-width: 768px) {
+  .contenedor-filtros {
+    width: 240px;
+  }
 }/*# sourceMappingURL=NavBarMisiones.css.map */

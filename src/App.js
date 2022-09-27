@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <MisionesContextProvider>
         <BrowserRouter>
-          <NavBar />
+          {/* <NavBar /> */}
           <Switch>
             <Route exact path="/">
               <Landing />
