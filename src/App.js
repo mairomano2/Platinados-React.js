@@ -14,19 +14,19 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/Platinados-React.js">
               <Landing />
             </Route>
-            <Route exact path="/misiones">
+            <Route exact path="/Platinados-React.js/misiones">
               <Misiones />
             </Route>
-            <Route exact path="/comoJugar">
+            <Route exact path="/Platinados-React.js/comoJugar">
               <ComoJugar />
             </Route>
-            <Route exact path="/misionesCompletadas">
+            <Route exact path="/Platinados-React.js/misionesCompletadas">
               <MisionesCompletadas />
             </Route>
-            <Route exact path="/categoria/:categoriaID">
+            <Route exact path="/Platinados-React.js/categoria/:categoriaID">
               <Misiones />
             </Route>
           </Switch>

@@ -21,9 +21,9 @@ export function ComoJugar(){
         <section className="contenedor-decorado">
           <article>
             <h2 className="subtitulos">Instructivo</h2>
-            <p className="parrafos">¡Gracias por unirte a Platinados! Primero que nada vas a necesitar <Link to="/">registrate</Link> para que guardar tu progreso.</p>
-            <p className="parrafos">Para comenzar a jugar tenés que acceder a la sección <Link to="/misiones">misiones</Link>. Podés empezar haciendo las misiones que te proponemos (verás que son muy variadas: hay de cocina, salud, finanzas personaes, etc.) o crear una misión personalizada. A las misiones personalizadas deberás asignales un titulo, una descripción y un puntaje.</p>
-            <p className="parrafos">Todas las misiones que quieras hacer se agregan a tu <Link to="/misionesCompletadas">lista de metas</Link> se suman haciendo click en el botón "Marcar como completada" que hay en cada misión a excepción de las misiones personalizadas que se agregan automáticamente una vez cargados todos los datos.</p>
+            <p className="parrafos">¡Gracias por unirte a Platinados! Primero que nada vas a necesitar <Link to="/Platinados-React.js">registrate</Link> para que guardar tu progreso.</p>
+            <p className="parrafos">Para comenzar a jugar tenés que acceder a la sección <Link to="Platinados-React.js/misiones">misiones</Link>. Podés empezar haciendo las misiones que te proponemos (verás que son muy variadas: hay de cocina, salud, finanzas personaes, etc.) o crear una misión personalizada. A las misiones personalizadas deberás asignales un titulo, una descripción y un puntaje.</p>
+            <p className="parrafos">Todas las misiones que quieras hacer se agregan a tu <Link to="Platinados-React.js/misionesCompletadas">lista de metas</Link> se suman haciendo click en el botón "Marcar como completada" que hay en cada misión a excepción de las misiones personalizadas que se agregan automáticamente una vez cargados todos los datos.</p>
             <p className="parrafos">Cada misión que marques como completada sumará la cantidad de puntos que indica. Estos puntos son exclusivamente para vos, no tienen valor de competencia para ningun otro jugador ya que este juego no se trata de la competitividad sino del desarollo personal. Por último te aconsejamos tener honestidad con vos mismo y marcar como completadas las misiones que sientas que realmente hayas termiando y sientas que lograste un buen resultado.</p>
           </article>
         </section>
