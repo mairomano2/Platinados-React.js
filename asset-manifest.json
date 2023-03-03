@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mairomano2/Platinados-React.js/static/css/main.3e402423.chunk.css",
-    "main.js": "/mairomano2/Platinados-React.js/static/js/main.9992ab4e.chunk.js",
-    "main.js.map": "/mairomano2/Platinados-React.js/static/js/main.9992ab4e.chunk.js.map",
-    "runtime-main.js": "/mairomano2/Platinados-React.js/static/js/runtime-main.ea78727c.js",
-    "runtime-main.js.map": "/mairomano2/Platinados-React.js/static/js/runtime-main.ea78727c.js.map",
-    "static/js/2.02993ecb.chunk.js": "/mairomano2/Platinados-React.js/static/js/2.02993ecb.chunk.js",
-    "static/js/2.02993ecb.chunk.js.map": "/mairomano2/Platinados-React.js/static/js/2.02993ecb.chunk.js.map",
-    "static/js/3.846bc21c.chunk.js": "/mairomano2/Platinados-React.js/static/js/3.846bc21c.chunk.js",
-    "static/js/3.846bc21c.chunk.js.map": "/mairomano2/Platinados-React.js/static/js/3.846bc21c.chunk.js.map",
-    "index.html": "/mairomano2/Platinados-React.js/index.html",
-    "static/css/main.3e402423.chunk.css.map": "/mairomano2/Platinados-React.js/static/css/main.3e402423.chunk.css.map",
-    "static/js/2.02993ecb.chunk.js.LICENSE.txt": "/mairomano2/Platinados-React.js/static/js/2.02993ecb.chunk.js.LICENSE.txt",
-    "static/media/gummy-gameboy.efc00fd3.png": "/mairomano2/Platinados-React.js/static/media/gummy-gameboy.efc00fd3.png",
-    "static/media/sega.9aaa4fb1.png": "/mairomano2/Platinados-React.js/static/media/sega.9aaa4fb1.png"
+    "main.css": "/Platinados-React.js/static/css/main.3e402423.chunk.css",
+    "main.js": "/Platinados-React.js/static/js/main.9992ab4e.chunk.js",
+    "main.js.map": "/Platinados-React.js/static/js/main.9992ab4e.chunk.js.map",
+    "runtime-main.js": "/Platinados-React.js/static/js/runtime-main.b630f3a6.js",
+    "runtime-main.js.map": "/Platinados-React.js/static/js/runtime-main.b630f3a6.js.map",
+    "static/js/2.02993ecb.chunk.js": "/Platinados-React.js/static/js/2.02993ecb.chunk.js",
+    "static/js/2.02993ecb.chunk.js.map": "/Platinados-React.js/static/js/2.02993ecb.chunk.js.map",
+    "static/js/3.846bc21c.chunk.js": "/Platinados-React.js/static/js/3.846bc21c.chunk.js",
+    "static/js/3.846bc21c.chunk.js.map": "/Platinados-React.js/static/js/3.846bc21c.chunk.js.map",
+    "index.html": "/Platinados-React.js/index.html",
+    "static/css/main.3e402423.chunk.css.map": "/Platinados-React.js/static/css/main.3e402423.chunk.css.map",
+    "static/js/2.02993ecb.chunk.js.LICENSE.txt": "/Platinados-React.js/static/js/2.02993ecb.chunk.js.LICENSE.txt",
+    "static/media/gummy-gameboy.efc00fd3.png": "/Platinados-React.js/static/media/gummy-gameboy.efc00fd3.png",
+    "static/media/sega.9aaa4fb1.png": "/Platinados-React.js/static/media/sega.9aaa4fb1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea78727c.js",
+    "static/js/runtime-main.b630f3a6.js",
     "static/js/2.02993ecb.chunk.js",
     "static/css/main.3e402423.chunk.css",
     "static/js/main.9992ab4e.chunk.js"
