@@ -2,7 +2,7 @@
   "name": "platinados",
   "version": "0.1.0",
   "homepage": "https://mairomano2.github.io/Platinados-React.js/",
-  "private": true,
+  "private": fasle,
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "dependencies": {
