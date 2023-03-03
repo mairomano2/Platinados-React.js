@@ -30,14 +30,11 @@
 .link {
   -webkit-text-decoration: underline 1px rgba(0, 0, 0, 0);
           text-decoration: underline 1px rgba(0, 0, 0, 0);
-  transition: -webkit-text-decoration-color 0.3s;
   transition: text-decoration-color 0.3s;
-  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
 }
 
 .link:hover {
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
+  text-decoration-color: white;
 }
 
 .div-general {
