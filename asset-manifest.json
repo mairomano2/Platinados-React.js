@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/Platinados-React.js/static/css/main.3e402423.chunk.css",
-    "main.js": "/Platinados-React.js/static/js/main.9992ab4e.chunk.js",
-    "main.js.map": "/Platinados-React.js/static/js/main.9992ab4e.chunk.js.map",
-    "runtime-main.js": "/Platinados-React.js/static/js/runtime-main.b630f3a6.js",
-    "runtime-main.js.map": "/Platinados-React.js/static/js/runtime-main.b630f3a6.js.map",
-    "static/js/2.02993ecb.chunk.js": "/Platinados-React.js/static/js/2.02993ecb.chunk.js",
-    "static/js/2.02993ecb.chunk.js.map": "/Platinados-React.js/static/js/2.02993ecb.chunk.js.map",
-    "static/js/3.846bc21c.chunk.js": "/Platinados-React.js/static/js/3.846bc21c.chunk.js",
-    "static/js/3.846bc21c.chunk.js.map": "/Platinados-React.js/static/js/3.846bc21c.chunk.js.map",
+    "main.js": "/Platinados-React.js/static/js/main.867b52ed.chunk.js",
+    "main.js.map": "/Platinados-React.js/static/js/main.867b52ed.chunk.js.map",
+    "runtime-main.js": "/Platinados-React.js/static/js/runtime-main.265ef790.js",
+    "runtime-main.js.map": "/Platinados-React.js/static/js/runtime-main.265ef790.js.map",
+    "static/js/2.f0bfff13.chunk.js": "/Platinados-React.js/static/js/2.f0bfff13.chunk.js",
+    "static/js/2.f0bfff13.chunk.js.map": "/Platinados-React.js/static/js/2.f0bfff13.chunk.js.map",
+    "static/js/3.a20201a1.chunk.js": "/Platinados-React.js/static/js/3.a20201a1.chunk.js",
+    "static/js/3.a20201a1.chunk.js.map": "/Platinados-React.js/static/js/3.a20201a1.chunk.js.map",
     "index.html": "/Platinados-React.js/index.html",
     "static/css/main.3e402423.chunk.css.map": "/Platinados-React.js/static/css/main.3e402423.chunk.css.map",
-    "static/js/2.02993ecb.chunk.js.LICENSE.txt": "/Platinados-React.js/static/js/2.02993ecb.chunk.js.LICENSE.txt",
+    "static/js/2.f0bfff13.chunk.js.LICENSE.txt": "/Platinados-React.js/static/js/2.f0bfff13.chunk.js.LICENSE.txt",
     "static/media/gummy-gameboy.efc00fd3.png": "/Platinados-React.js/static/media/gummy-gameboy.efc00fd3.png",
     "static/media/sega.9aaa4fb1.png": "/Platinados-React.js/static/media/sega.9aaa4fb1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b630f3a6.js",
-    "static/js/2.02993ecb.chunk.js",
+    "static/js/runtime-main.265ef790.js",
+    "static/js/2.f0bfff13.chunk.js",
     "static/css/main.3e402423.chunk.css",
-    "static/js/main.9992ab4e.chunk.js"
+    "static/js/main.867b52ed.chunk.js"
   ]
 }
